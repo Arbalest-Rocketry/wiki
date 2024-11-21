@@ -70,16 +70,11 @@ Use descriptive tags such as the following at the start of your commit to make i
 
 #### Examples
 
-**Bad:**
-```
-Changed telemetry code to support new sensors.
-```
-
-**Good:**
-```
-feat: add support for new IMU sensor
-Updated telemetry system to integrate the BNO085 IMU sensor. Improved data accuracy validated through simulated tests.
-```
+Use the description section to show tests passing and complete details of your changes[^libscp]. Don’t say what you changed—git already shows that—but instead say why you changed it. 
+- don’t say: add macro for i2c address
+	- This is in the diff, you haven't said anything new
+- do say: support bno055 and bmp280 on the same i2c bus
+	- This explains your reason
 
 ---
 
